@@ -52,7 +52,6 @@ function addPoint(pcp) {
             },
             'Ambulatory Services': {
                 fillColor: '#ffffff',
-                fillOpacity: .1,
                 minValue: 10000,
                 maxValue: 20000,
                 maxHeight: 50,
@@ -60,6 +59,7 @@ function addPoint(pcp) {
             }
         },
         radius: 30,
+        fillOpacity: 1,
         weight: .5//,
         //color: '#000000'
     };
