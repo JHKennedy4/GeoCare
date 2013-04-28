@@ -55,7 +55,7 @@ function addPoint(pcp) {
                 displayText: display
             }
         },
-        weight: 1//,
+        weight: 10//,
         //color: '#000000'
     };
     marker  =  new L.CoxcombChartMarker(new L.LatLng(pcp.geometry.coordinates[1], pcp.geometry.coordinates[0]), options);
