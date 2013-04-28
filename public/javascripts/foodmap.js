@@ -28,7 +28,7 @@ function addPoint(pcp) {
         chartOptions: {
             'Referals': {
                 fillColor: '#1a8090',
-                fillOpacity: 1,
+                fillOpacity: .1,
                 minValue: 800,
                 maxValue: 1200,
                 maxHeight: 50,
@@ -36,7 +36,7 @@ function addPoint(pcp) {
             },
             'Gross Payments': {
                 fillColor: '#cf7405',
-                fillOpacity: 1,
+                fillOpacity: .1,
                 minValue: 5000,
                 maxValue: 10000,
                 maxHeight: 50,
@@ -44,7 +44,7 @@ function addPoint(pcp) {
             },
             'Patient Experience Rating': {
                 fillColor: '#7793AD',
-                fillOpacity: 1,
+                fillOpacity: .1,
                 minValue: 0,
                 maxValue: 10,
                 maxHeight: 50,
@@ -52,7 +52,7 @@ function addPoint(pcp) {
             },
             'Ambulatory Services': {
                 fillColor: '#ffffff',
-                fillOpacity: 1,
+                fillOpacity: .1,
                 minValue: 10000,
                 maxValue: 20000,
                 maxHeight: 50,
