@@ -30,32 +30,32 @@ function addPoint(pcp) {
                 fillolor: '#1a8090',
                 minValue: 800,
                 maxValue: 1200,
-                maxHeight: 30,
+                maxHeight: 50,
                 displayText: display
             },
             'Gross Payments': {
                 fillColor: '#cf7405',
                 minValue: 5000,
                 maxValue: 10000,
-                maxHeight: 30,
+                maxHeight: 50,
                 displayText: display
             },
             'Patient Experience Rating': {
                 fillColor: '#7793AD',
                 minValue: 0,
                 maxValue: 10,
-                maxHeight: 30,
+                maxHeight: 50,
                 displayText: display
             },
             'Ambulatory Services': {
                 fillColor: '#ffffff',
                 minValue: 10000,
                 maxValue: 20000,
-                maxHeight: 30,
+                maxHeight: 50,
                 displayText: display
             }
         },
-        weight: 10//,
+        weight: .5//,
         //color: '#000000'
     };
     marker  =  new L.CoxcombChartMarker(new L.LatLng(pcp.geometry.coordinates[1], pcp.geometry.coordinates[0]), options);
