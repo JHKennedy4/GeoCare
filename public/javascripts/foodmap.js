@@ -59,6 +59,7 @@ function addPoint(pcp) {
                 displayText: display
             }
         },
+        radius: 30,
         weight: .5//,
         //color: '#000000'
     };
