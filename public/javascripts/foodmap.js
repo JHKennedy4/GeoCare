@@ -67,7 +67,7 @@ function addPoint(pcp) {
     G.map.addLayer(marker);
 }
 
-$.ajax('http://jhk.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT DISTINCT ON (account_name) * FROM pcp&api_key=c3c310cb4bf016cd634e4df3d0a88b82826a4fbb', {
+$.ajax('http://jhk.cartodb.com/api/v2/sql?format=GeoJSON&q=SELECT DISTINCT ON (account_name) * FROM pcp LIMIT 28&api_key=c3c310cb4bf016cd634e4df3d0a88b82826a4fbb', {
         dataType: "json",
     }).done(function (data) {
         // works!
