@@ -58,7 +58,7 @@ function addPoint(pcp) {
         weight: 1,
         color: '#000000'
     };
-    marker  =  new L.CoxcombChartMarker(new L.LatLong(pcp.geometry.coordinates[1], pcp.geometry.coordinates[0]), options);
+    marker  =  new L.CoxcombChartMarker(new L.LatLng(pcp.geometry.coordinates[1], pcp.geometry.coordinates[0]), options);
     G.map.addLayer(marker);
 }
 
