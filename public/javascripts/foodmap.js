@@ -8,7 +8,7 @@ G.map = new L.map('map', {
 G.map.addLayer(baselayer);
 
 //distinct on (account_name)
-$.ajax('http://jhk.cartodb.com/api/v2/sql?q=SELECT * FROM pcp&api_key=c3c310cb4bf016cd634e4df3d0a88b82826a4fbb', {
+$.ajax('http://jhk.cartodb.com/api/v2/sql?q=SELECT DISTINCT ON (account_name) * FROM pcp&api_key=c3c310cb4bf016cd634e4df3d0a88b82826a4fbb', {
         dataType: "json",
     }).done(function (data) {
         // works!
