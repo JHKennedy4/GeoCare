@@ -59,7 +59,7 @@ function addPoint(pcp) {
             }
         },
         radius: 30,
-        fillOpacity: 1,
+        fillOpacity: 0.8,
         weight: .5//,
         //color: '#000000'
     };
