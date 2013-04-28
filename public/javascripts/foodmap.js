@@ -28,39 +28,36 @@ function addPoint(pcp) {
         chartOptions: {
             'Referals': {
                 fillColor: '#1a8090',
-                fillOpacity: .1,
                 minValue: 800,
                 maxValue: 1200,
-                maxHeight: 50,
+                maxHeight: 100,
                 displayText: display
             },
             'Gross Payments': {
                 fillColor: '#cf7405',
-                fillOpacity: .1,
                 minValue: 5000,
                 maxValue: 10000,
-                maxHeight: 50,
+                maxHeight: 100,
                 displayText: display
             },
             'Patient Experience Rating': {
                 fillColor: '#7793AD',
-                fillOpacity: .1,
                 minValue: 0,
                 maxValue: 10,
-                maxHeight: 50,
+                maxHeight: 100,
                 displayText: display
             },
             'Ambulatory Services': {
                 fillColor: '#ffffff',
                 minValue: 10000,
                 maxValue: 20000,
-                maxHeight: 50,
+                maxHeight: 100,
                 displayText: display
             }
         },
         radius: 30,
         fillOpacity: 0.8,
-        weight: .5//,
+        weight: 0.5 //,
         //color: '#000000'
     };
     marker  =  new L.CoxcombChartMarker(new L.LatLng(pcp.geometry.coordinates[1], pcp.geometry.coordinates[0]), options);
