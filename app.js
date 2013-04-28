@@ -52,7 +52,11 @@ app.configure('development', function () {
 });
 
 app.get('/', function (req, res) {
-    res.render('index', { title: 'GeoCare' });
+    client.query("select distinct on (account_name) the_geom_webmercator, account_name, referals, gross_payments, patient_exp, ambulatory_service from pcp", function (err, data) {
+        res.locals.pcp = data.rows;
+        console.log(data.rows);
+        res.render('index', { title: 'GeoCare' });
+    });
 });
 
 http.createServer(app).listen(app.get('port'), function () {

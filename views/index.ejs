@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
     <![endif]-->
 
+    <script type="text/javascript" src="/dvf/dist/leaflet-dvf.min.js"></script>
+    <link rel="stylesheet" href="/dvf/dist/css/dvf.css" type="text/css">
+
     <script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.css" />
     <!--[if lte IE 8]>
@@ -27,6 +30,7 @@
 
     <script>
         G = {};
+        G.pcp = <%- JSON.stringify(pcp) %>;
     </script>
     </head>
     <body>
