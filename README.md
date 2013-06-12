@@ -5,7 +5,7 @@ An application for crowd sourcing data on food availability, and mapping food de
 
 The goal is for this application to host food availability data for the entire nation, but currently development work is being done with data from Monroe County, NY.
 
-Feel free to go to go to http://www.snapretailerlocator.com/ to download the data directly from the USDA.
+Feel free to go to http://www.snapretailerlocator.com/ to download the data directly from the USDA.
 
 SNAP Data for Monroe County is available at CartoDB: http://cdb.io/XVChAg
 
